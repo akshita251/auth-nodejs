@@ -25,4 +25,8 @@ app.use(express.json());
 app.use('/api/user', authRoute);
 app.use('/api/posts', postRoute);
 
+app.get('/', (req,res)=>{
+    res.setDefaultEncoding('umm')
+})
+
 app.listen(3000);   
